@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="stylesheet" href="/wp-content/cache/min/1/1254a39e480ad11f528c2c25fca00401.css" data-minify="1">
+<script data-minify="1"></script> <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>所有shopify卖家都必须知道的Facebook Pixel高级用法</title>
+<meta name="description" content="我们开了Shopify店铺以后最重要的事情就是加上Facebook Pixel，什么是Pixel我在这里就不做解释了，但是如何正确、充分使用Facebook Pixel可能很多小伙伴还不知道，在这里我着重介绍一下：">
+<meta name="keywords" content="facebook广告,facebook教程,shopify技巧,shopify推广">
+<link rel="apple-touch-icon" href="/wp-content/themes/JieStyle-Two-master/images/icon_32.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/wp-content/themes/JieStyle-Two-master/images/icon_152.png">
+<link rel="apple-touch-icon" sizes="167x167" href="/wp-content/themes/JieStyle-Two-master/images/icon_167.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/wp-content/themes/JieStyle-Two-master/images/icon_180.png">
+<link rel="icon" href="/wp-content/themes/JieStyle-Two-master/images/icon_32.png" type="image/x-icon">
+<link rel="stylesheet" href="/wp-content/themes/JieStyle-Two-master/css/bootstrap.min.css">
+<link rel="stylesheet" href="/wp-content/themes/JieStyle-Two-master/css/font-awesome.min.css">
+<link rel="stylesheet" href="/wp-content/themes/JieStyle-Two-master/style.css">
+<link rel="pingback" href="/xmlrpc.php">
+<meta name="robots" content="max-image-preview:large">
+<meta name="dc.title" content="所有shopify卖家都必须知道的Facebook Pixel高级用法 - Shopify跨境电商独立站笔记">
+<meta name="dc.description" content="我们开了Shopify店铺以后最重要的事情就是加上Facebook Pixel，什么是Pixel我在&hellip;">
+<meta name="dc.relation" content="https://www.shopifynotes.com/shopify59.html/">
+<meta name="dc.source" content="https://www.shopifynotes.com/">
+<meta name="dc.language" content="zh_CN">
+<meta name="description" content="我们开了Shopify店铺以后最重要的事情就是加上Facebook Pixel，什么是Pixel我在&hellip;">
+<link rel="canonical" href="/shopify59.html/">
+<style id="global-styles-inline-css" type="text/css">body{--wp--preset--color--black:#000;--wp--preset--color--cyan-bluish-gray:#abb8c3;--wp--preset--color--white:#fff;--wp--preset--color--pale-pink:#f78da7;--wp--preset--color--vivid-red:#cf2e2e;--wp--preset--color--luminous-vivid-orange:#ff6900;--wp--preset--color--luminous-vivid-amber:#fcb900;--wp--preset--color--light-green-cyan:#7bdcb5;--wp--preset--color--vivid-green-cyan:#00d084;--wp--preset--color--pale-cyan-blue:#8ed1fc;--wp--preset--color--vivid-cyan-blue:#0693e3;--wp--preset--color--vivid-purple:#9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple:linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan:linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange:linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red:linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray:linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum:linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple:linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux:linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk:linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean:linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass:linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight:linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale:url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale:url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow:url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red:url('#wp-duotone-blue-red');--wp--preset--duotone--midnight:url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow:url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green:url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange:url('#wp-duotone-blue-orange');--wp--preset--font-size--small:13px;--wp--preset--font-size--medium:20px;--wp--preset--font-size--large:36px;--wp--preset--font-size--x-large:42px}.has-black-color{color:var(--wp--preset--color--black)!important}.has-cyan-bluish-gray-color{color:var(--wp--preset--color--cyan-bluish-gray)!important}.has-white-color{color:var(--wp--preset--color--white)!important}.has-pale-pink-color{color:var(--wp--preset--color--pale-pink)!important}.has-vivid-red-color{color:var(--wp--preset--color--vivid-red)!important}.has-luminous-vivid-orange-color{color:var(--wp--preset--color--luminous-vivid-orange)!important}.has-luminous-vivid-amber-color{color:var(--wp--preset--color--luminous-vivid-amber)!important}.has-light-green-cyan-color{color:var(--wp--preset--color--light-green-cyan)!important}.has-vivid-green-cyan-color{color:var(--wp--preset--color--vivid-green-cyan)!important}.has-pale-cyan-blue-color{color:var(--wp--preset--color--pale-cyan-blue)!important}.has-vivid-cyan-blue-color{color:var(--wp--preset--color--vivid-cyan-blue)!important}.has-vivid-purple-color{color:var(--wp--preset--color--vivid-purple)!important}.has-black-background-color{background-color:var(--wp--preset--color--black)!important}.has-cyan-bluish-gray-background-color{background-color:var(--wp--preset--color--cyan-bluish-gray)!important}.has-white-background-color{background-color:var(--wp--preset--color--white)!important}.has-pale-pink-background-color{background-color:var(--wp--preset--color--pale-pink)!important}.has-vivid-red-background-color{background-color:var(--wp--preset--color--vivid-red)!important}.has-luminous-vivid-orange-background-color{background-color:var(--wp--preset--color--luminous-vivid-orange)!important}.has-luminous-vivid-amber-background-color{background-color:var(--wp--preset--color--luminous-vivid-amber)!important}.has-light-green-cyan-background-color{background-color:var(--wp--preset--color--light-green-cyan)!important}.has-vivid-green-cyan-background-color{background-color:var(--wp--preset--color--vivid-green-cyan)!important}.has-pale-cyan-blue-background-color{background-color:var(--wp--preset--color--pale-cyan-blue)!important}.has-vivid-cyan-blue-background-color{background-color:var(--wp--preset--color--vivid-cyan-blue)!important}.has-vivid-purple-background-color{background-color:var(--wp--preset--color--vivid-purple)!important}.has-black-border-color{border-color:var(--wp--preset--color--black)!important}.has-cyan-bluish-gray-border-color{border-color:var(--wp--preset--color--cyan-bluish-gray)!important}.has-white-border-color{border-color:var(--wp--preset--color--white)!important}.has-pale-pink-border-color{border-color:var(--wp--preset--color--pale-pink)!important}.has-vivid-red-border-color{border-color:var(--wp--preset--color--vivid-red)!important}.has-luminous-vivid-orange-border-color{border-color:var(--wp--preset--color--luminous-vivid-orange)!important}.has-luminous-vivid-amber-border-color{border-color:var(--wp--preset--color--luminous-vivid-amber)!important}.has-light-green-cyan-border-color{border-color:var(--wp--preset--color--light-green-cyan)!important}.has-vivid-green-cyan-border-color{border-color:var(--wp--preset--color--vivid-green-cyan)!important}.has-pale-cyan-blue-border-color{border-color:var(--wp--preset--color--pale-cyan-blue)!important}.has-vivid-cyan-blue-border-color{border-color:var(--wp--preset--color--vivid-cyan-blue)!important}.has-vivid-purple-border-color{border-color:var(--wp--preset--color--vivid-purple)!important}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background:var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple)!important}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background:var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan)!important}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background:var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange)!important}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background:var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red)!important}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background:var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray)!important}.has-cool-to-warm-spectrum-gradient-background{background:var(--wp--preset--gradient--cool-to-warm-spectrum)!important}.has-blush-light-purple-gradient-background{background:var(--wp--preset--gradient--blush-light-purple)!important}.has-blush-bordeaux-gradient-background{background:var(--wp--preset--gradient--blush-bordeaux)!important}.has-luminous-dusk-gradient-background{background:var(--wp--preset--gradient--luminous-dusk)!important}.has-pale-ocean-gradient-background{background:var(--wp--preset--gradient--pale-ocean)!important}.has-electric-grass-gradient-background{background:var(--wp--preset--gradient--electric-grass)!important}.has-midnight-gradient-background{background:var(--wp--preset--gradient--midnight)!important}.has-small-font-size{font-size:var(--wp--preset--font-size--small)!important}.has-medium-font-size{font-size:var(--wp--preset--font-size--medium)!important}.has-large-font-size{font-size:var(--wp--preset--font-size--large)!important}.has-x-large-font-size{font-size:var(--wp--preset--font-size--x-large)!important}</style> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110013720-3"></script> <script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}gtag('js', new Date());
+jQuery(document).ready(function() {
+	jQuery('a[target="_blank"]').click(function(e) {
+		gtag('event', 'click', {'event_category': 'external links','event_label' : this.href});
+	});
+});
+gtag('config', 'UA-110013720-3' , {'allow_display_features': false,});</script> <style type="text/css">a{color:#393e46}a:hover{color:#00adb5!important}#header{background-color:#393e46}.widget .widget-title::after{background-color:#393e46}.uptop{border-left-color:#393e46}#titleBar .toggle:before{background:#393e46}</style> <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110013720-3"></script> <script>window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-110013720-3');</script> </head>
+<body>
+<header id="header"><div class="avatar"><a href="/" title="Shopify跨境电商独立站笔记"><img src="/wp-content/uploads/2018/04/shopify笔记.jpg" alt="Shopify跨境电商独立站笔记" class="img-circle" width="50%"></a></div>    <h1 id="name"><a href="/" title="Shopify跨境电商独立站笔记" style="color:#fff">Alex是大叔</a></h1>
+<div class="sns"></div>
+<div class="nav"><ul>
+<li><a href="/">首页</a></li>
+<li><a href="/shopifycategory/shopify-facebook-ads">Facebook广告教程</a></li>
+<li><a href="/shopifycategory/shopifynotes">Shopify操作笔记</a></li>
+<li><a href="/shopifycategory/shopify-tips">Shopify小技巧</a></li>
+</ul></div></header><div id="main">
+<article class="col-md-8 col-md-offset-2 view clearfix"><h1 class="view-title">所有shopify卖家都必须知道的Facebook Pixel高级用法</h1>
+<div class="view-meta"> <span>作者: Alex是大叔</span> <span>分类: <a href="/shopifycategory/shopifynotes" rel="category tag">Shopify独立站操作笔记</a>,<a href="/shopifycategory/shopify-facebook-ads" rel="category tag">跨境电商Facebook广告教程</a></span> <span>发布时间: 2018-04-25 23:00</span> <span></span>
+</div>
+<div class="view-content">
+<p>我们开了Shopify店铺以后最重要的事情就是加上<a href="https://www.facebook.com/business/learn/facebook-ads-pixel" target="_blank">Facebook Pixel</a>，什么是Pixel我在这里就不做解释了，但是如何正确、充分使用Facebook Pixel可能很多小伙伴还不知道，在这里我着重介绍一下：</p>
+<p>&nbsp;</p>
+<p>1.建立网站转化广告：网站转化建立pixel最主要的作用，这种广告形式在这里有讲道：<a href="/shopify57.html" target="_blank">Facebook广告选择：网站转化还是帖文互动？</a>装了pixel我们shopify网站的一系列指标facebook才能统计到从而进行自动优化。</p>
+<p>&nbsp;</p>
+<p>2.建立<strong>Custom Conversions</strong>：这个是很多朋友做shopify时最容易忽略的一点，但也是相当重要的一点。我们在初期开店的时候往往是杂货铺性质，什么产品都拿来测，没有niche，也不只做某一品类，但是都用一个pixel投放，这样会导致受众不准确。举个例子：上一个产品投放的是一款年轻女士用的护肤品，facebook会自动根据广告表现尽量把相关的受众匹配给你，也就是女，24-35，兴趣皮肤护理之类的，这时你又上了一款新的产品，用的是相同的pixel，比如是一个电焊工具，但是facebook还是会根据历史数据匹配给你年轻的女性，这显然是不合适的，然后就会不断再试错进行机器学习找到精准受众，但这样你跑的护肤品受众又会收到牵扯，从而极大降低了ROI。</p>
+<p>如果店铺里同时跑的产品差别很大，我们就需要在这里建立自定义转化事件，如下图：</p>
+<p><img width="1529" height="625" class="alignnone size-full wp-image-60" src="/wp-content/uploads/2018/04/自定义转化.png" alt="自定义转化" srcset="/wp-content/uploads/2018/04/自定义转化.png 1529w, /wp-content/uploads/2018/04/自定义转化-300x123.png 300w, /wp-content/uploads/2018/04/自定义转化-768x314.png 768w, /wp-content/uploads/2018/04/自定义转化-1024x419.png 1024w" sizes="(max-width: 1529px) 100vw, 1529px"></p>
+<p>点击之后选择创建自定义转化：</p>
+<p><img loading="lazy" width="698" height="786" class="alignnone size-full wp-image-61" src="/wp-content/uploads/2018/04/Custom-Conversions.png" alt="Custom Conversions" srcset="/wp-content/uploads/2018/04/Custom-Conversions.png 698w, /wp-content/uploads/2018/04/Custom-Conversions-266x300.png 266w" sizes="(max-width: 698px) 100vw, 698px"></p>
+<p>在Website Event这里选择Purchase，然后在Rule这里选择Event Parameters：</p>
+<p><img loading="lazy" width="608" height="226" class="alignnone size-full wp-image-62" src="/wp-content/uploads/2018/04/自定义规则.png" alt="自定义规则" srcset="/wp-content/uploads/2018/04/自定义规则.png 608w, /wp-content/uploads/2018/04/自定义规则-300x112.png 300w" sizes="(max-width: 608px) 100vw, 608px"></p>
+<p>接着在下边选择content id：</p>
+<p><img loading="lazy" width="605" height="422" class="alignnone size-full wp-image-63" src="/wp-content/uploads/2018/04/选择产品ID.png" srcset="/wp-content/uploads/2018/04/选择产品ID.png 605w, /wp-content/uploads/2018/04/选择产品ID-300x209.png 300w" sizes="(max-width: 605px) 100vw, 605px"></p>
+<p>&nbsp;</p>
+<p>接着输入你的shopify产品的ID就可以了，这个产品ID好多朋友告诉我不知道在哪里找，其实就在店铺里编辑产品的时候url里的数字就是：</p>
+<p><img loading="lazy" width="1276" height="528" class="alignnone size-full wp-image-91" src="/wp-content/uploads/2018/04/shopify产品id.jpg" alt="" srcset="/wp-content/uploads/2018/04/shopify产品id.jpg 1276w, /wp-content/uploads/2018/04/shopify产品id-300x124.jpg 300w, /wp-content/uploads/2018/04/shopify产品id-768x318.jpg 768w, /wp-content/uploads/2018/04/shopify产品id-1024x424.jpg 1024w" sizes="(max-width: 1276px) 100vw, 1276px"></p>
+<p>这样设置完以后，就可以在facebook adset层级选择刚才制作这个自定义转化事件：</p>
+<p><img loading="lazy" width="758" height="476" class="alignnone size-full wp-image-65" src="/wp-content/uploads/2018/04/facebook-adset.png" alt="facebook adset" srcset="/wp-content/uploads/2018/04/facebook-adset.png 758w, /wp-content/uploads/2018/04/facebook-adset-300x188.png 300w" sizes="(max-width: 758px) 100vw, 758px"></p>
+<p>至此一个Custom Conversion的广告就完成了，这样做的好处就是在你产品跨度较大时能够分别对不同产品进行自动优化，避免了数据冲突。</p>
+<p>&nbsp;</p>
+<p>3.建立自定义受众和相似受众：不得不说，facebook在广告系统方面做的真的是太牛逼了，有了这个自定义受众我们就有极大的空间去发挥，找到那些最精准的受众。你可以根据浏览过某个产品的人、买过某个产品的人、加过购物车的人、看过广告的人、到过你facebook主页的人、跟你帖子有过互动的人、视频看了几秒的人等等建立一批自定义受众，然后根据这些受众建立相似受众，也就是facebook自动帮你找到和这些人最接近的一批人，然后拿这些相似受众再去建广告，效果杠杠的，谁用谁知道。尤其是当你积累的超过100个购买时，用这些购买建立1%相似受众的人群拿来投放，ROI会超高，强烈推荐！必须使用！</p>
+<p>&nbsp;</p>
+<p>教程到此结束，有什么细节不懂的可以留言。</p>
+<p>&nbsp;</p>
+</div>
+<section class="view-tag"><div class="pull-left">
+<i class="fa fa-tags"></i> <a href="/shopifytag/facebook%e5%b9%bf%e5%91%8a" rel="tag">facebook广告</a><a href="/shopifytag/facebook%e6%95%99%e7%a8%8b" rel="tag">facebook教程</a><a href="/shopifytag/shopify%e6%8a%80%e5%b7%a7" rel="tag">shopify技巧</a><a href="/shopifytag/shopify%e6%8e%a8%e5%b9%bf" rel="tag">shopify推广</a>
+</div></section><section id="comments"><div class="comment-head clearfix">
+<div class="pull-left">9条评论</div>
+<div class="pull-right"><a href="#respond"><i class="fa fa-pencil"></i> 添加新评论</a></div>
+</div>
+<ul>
+<li id="comment-li-31" class="comment_li"><div id="comment-31">
+<div class="comment_top clearfix">
+<div class="comment_avatar"><img alt="" src="https://secure.gravatar.com/avatar/06050383c7bb0c29fd1aecb913b0cbb4?s=40&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/06050383c7bb0c29fd1aecb913b0cbb4?s=80&#038;d=mm&#038;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" loading="lazy"></div>
+<div class="pull-left">
+<p class="comment_author">小张</p>
+<p class="comment_time">2018年6月15日 下午2:45</p>
+</div>
+<div class="pull-right"><a rel="nofollow" class="comment-reply-link" href="/shopify59.html?replytocom=31#respond" data-commentid="31" data-postid="59" data-belowelement="comment-31" data-respondelement="respond" data-replyto="回复给小张" aria-label="回复给小张">回复TA</a></div>
+</div>
+<div class="comment_text"><p>这种自定义事件设置是针对特定产品的，有没有就是针对类目的</p></div>
+</div></li>
+<li id="comment-li-189" class="comment_li"><div id="comment-189">
+<div class="comment_top clearfix">
+<div class="comment_avatar"><img alt="" src="https://secure.gravatar.com/avatar/6aa8a62a38bc4dc0849f3405b5b42f34?s=40&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/6aa8a62a38bc4dc0849f3405b5b42f34?s=80&#038;d=mm&#038;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" loading="lazy"></div>
+<div class="pull-left">
+<p class="comment_author">天下游</p>
+<p class="comment_time">2018年10月16日 下午8:10</p>
+</div>
+<div class="pull-right"><a rel="nofollow" class="comment-reply-link" href="/shopify59.html?replytocom=189#respond" data-commentid="189" data-postid="59" data-belowelement="comment-189" data-respondelement="respond" data-replyto="回复给天下游" aria-label="回复给天下游">回复TA</a></div>
+</div>
+<div class="comment_text"><p>正如楼上说的，请问怎么针对一个类别进行设置Pixel，比如说厨房用品，受众都是一样的，共用一个pixel；女装一个pixel；饰品一个pixel。</p></div>
+</div></li>
+<li id="comment-li-200" class="comment_li"><div id="comment-200">
+<div class="comment_top clearfix">
+<div class="comment_avatar"><img alt="" src="https://secure.gravatar.com/avatar/9642de104b000c157a5a20916f56eafa?s=40&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/9642de104b000c157a5a20916f56eafa?s=80&#038;d=mm&#038;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" loading="lazy"></div>
+<div class="pull-left">
+<p class="comment_author">如是</p>
+<p class="comment_time">2018年11月7日 下午7:16</p>
+</div>
+<div class="pull-right"><a rel="nofollow" class="comment-reply-link" href="/shopify59.html?replytocom=200#respond" data-commentid="200" data-postid="59" data-belowelement="comment-200" data-respondelement="respond" data-replyto="回复给如是" aria-label="回复给如是">回复TA</a></div>
+</div>
+<div class="comment_text"><p>同楼上的问题，这样设置只能针对单个产品吗？还是同一类的产品都可以用这个pixel？</p></div>
+</div></li>
+<li id="comment-li-543" class="comment_li"><div id="comment-543">
+<div class="comment_top clearfix">
+<div class="comment_avatar"><img alt="" src="https://secure.gravatar.com/avatar/a3e5205b47456a9826a3c3664cb9891c?s=40&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/a3e5205b47456a9826a3c3664cb9891c?s=80&#038;d=mm&#038;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" loading="lazy"></div>
+<div class="pull-left">
+<p class="comment_author">樟</p>
+<p class="comment_time">2019年4月16日 下午5:58</p>
+</div>
+<div class="pull-right"><a rel="nofollow" class="comment-reply-link" href="/shopify59.html?replytocom=543#respond" data-commentid="543" data-postid="59" data-belowelement="comment-543" data-respondelement="respond" data-replyto="回复给樟" aria-label="回复给樟">回复TA</a></div>
+</div>
+<div class="comment_text"><p>我用这种方法，有出单，因为广告成效中的ROAS有数据，但是成效那里没有数据，不知道问题出在哪儿？</p></div>
+</div></li>
+<li id="comment-li-797" class="comment_li"><div id="comment-797">
+<div class="comment_top clearfix">
+<div class="comment_avatar"><img alt="" src="https://secure.gravatar.com/avatar/650f204cbe09532702e0dcf1f3457374?s=40&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/650f204cbe09532702e0dcf1f3457374?s=80&#038;d=mm&#038;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" loading="lazy"></div>
+<div class="pull-left">
+<p class="comment_author">ella</p>
+<p class="comment_time">2019年11月13日 下午10:59</p>
+</div>
+<div class="pull-right"><a rel="nofollow" class="comment-reply-link" href="/shopify59.html?replytocom=797#respond" data-commentid="797" data-postid="59" data-belowelement="comment-797" data-respondelement="respond" data-replyto="回复给ella" aria-label="回复给ella">回复TA</a></div>
+</div>
+<div class="comment_text"><p>自定义受众是从之前的广告里面导出数据来的吗？具体如何操作？</p></div>
+</div></li>
+<li id="comment-li-838" class="comment_li"><div id="comment-838">
+<div class="comment_top clearfix">
+<div class="comment_avatar"><img alt="" src="https://secure.gravatar.com/avatar/1faa75da998e55ae78c25d1bfc40ee5c?s=40&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/1faa75da998e55ae78c25d1bfc40ee5c?s=80&#038;d=mm&#038;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" loading="lazy"></div>
+<div class="pull-left">
+<p class="comment_author">vincent</p>
+<p class="comment_time">2020年1月14日 下午7:13</p>
+</div>
+<div class="pull-right"><a rel="nofollow" class="comment-reply-link" href="/shopify59.html?replytocom=838#respond" data-commentid="838" data-postid="59" data-belowelement="comment-838" data-respondelement="respond" data-replyto="回复给vincent" aria-label="回复给vincent">回复TA</a></div>
+</div>
+<div class="comment_text"><p>Alex你好，我这边按照你的教程设置了 自定义转化事件，对于的广告出单后，在自定义转化事件成效那里看不到，鼠标点上去能看到加购等那些数据，但是按道理出了1单以后成效我选择自定义的那个转化事件成效，上面是- 而不是1，请问这个是什么问题</p></div>
+</div></li>
+<li id="comment-li-839" class="comment_li">
+<div id="comment-839">
+<div class="comment_top clearfix">
+<div class="comment_avatar"><img alt="" src="https://secure.gravatar.com/avatar/1faa75da998e55ae78c25d1bfc40ee5c?s=40&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/1faa75da998e55ae78c25d1bfc40ee5c?s=80&#038;d=mm&#038;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" loading="lazy"></div>
+<div class="pull-left">
+<p class="comment_author">vincent</p>
+<p class="comment_time">2020年1月18日 下午6:09</p>
+</div>
+<div class="pull-right"><a rel="nofollow" class="comment-reply-link" href="/shopify59.html?replytocom=839#respond" data-commentid="839" data-postid="59" data-belowelement="comment-839" data-respondelement="respond" data-replyto="回复给vincent" aria-label="回复给vincent">回复TA</a></div>
+</div>
+<div class="comment_text"><p>已经找到原因了,多谢</p></div>
+</div>
+<ol class="children">
+<li id="comment-li-853" class="comment_li"><div id="comment-853">
+<div class="comment_top clearfix">
+<div class="comment_avatar"><img alt="" src="https://secure.gravatar.com/avatar/97603c7dc05d56d5aacc12478b2cf700?s=40&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/97603c7dc05d56d5aacc12478b2cf700?s=80&#038;d=mm&#038;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" loading="lazy"></div>
+<div class="pull-left">
+<p class="comment_author">Chris L</p>
+<p class="comment_time">2020年3月5日 下午12:25</p>
+</div>
+<div class="pull-right"><a rel="nofollow" class="comment-reply-link" href="/shopify59.html?replytocom=853#respond" data-commentid="853" data-postid="59" data-belowelement="comment-853" data-respondelement="respond" data-replyto="回复给Chris L" aria-label="回复给Chris L">回复TA</a></div>
+</div>
+<div class="comment_text"><p>你好，请问是什么原因，以及如何解决？谢谢！</p></div>
+</div></li>
+<li id="comment-li-1099" class="comment_li"><div id="comment-1099">
+<div class="comment_top clearfix">
+<div class="comment_avatar"><img alt="" src="https://secure.gravatar.com/avatar/93c45d49d27a6b1fe2e3630589ce4f68?s=40&#038;d=mm&#038;r=g" srcset="https://secure.gravatar.com/avatar/93c45d49d27a6b1fe2e3630589ce4f68?s=80&#038;d=mm&#038;r=g 2x" class="avatar avatar-40 photo" height="40" width="40" loading="lazy"></div>
+<div class="pull-left">
+<p class="comment_author">KK</p>
+<p class="comment_time">2020年6月26日 下午4:44</p>
+</div>
+<div class="pull-right"><a rel="nofollow" class="comment-reply-link" href="/shopify59.html?replytocom=1099#respond" data-commentid="1099" data-postid="59" data-belowelement="comment-1099" data-respondelement="respond" data-replyto="回复给KK" aria-label="回复给KK">回复TA</a></div>
+</div>
+<div class="comment_text"><p>老哥，同问解决方法，遇到相同问题了，查了几天方法，还是不知道怎么解决。。。</p></div>
+</div></li>
+</ol>
+</li>
+</ul>
+<div id="respond" class="comment-respond">
+<h4 id="reply-title" class="comment-reply-title">发表评论 <small><a rel="nofollow" id="cancel-comment-reply-link" href="/shopify59.html#respond" style="display:none;">取消回复</a></small>
+</h4>
+<form action="https://www.shopifynotes.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+<p class="comment-notes"><span id="email-notes">您的电子邮箱地址不会被公开。</span> <span class="required-field-message" aria-hidden="true">必填项已用<span class="required" aria-hidden="true">*</span>标注</span></p>
+<div class="comment form-group has-feedback"><textarea class="form-control" id="comment" placeholder=" " name="comment" rows="5" aria-required="true" required onkeydown="if(event.ctrlKey){if(event.keyCode==13){document.getElementById('submit').click();return false}};"></textarea></div>
+<div class="comment-form-author form-group has-feedback"><div class="input-group">
+<div class="input-group-addon"><i class="fa fa-user"></i></div>
+<input class="form-control" placeholder="昵称" id="author" name="author" type="text" value="" size="30"><span class="form-control-feedback required">*</span>
+</div></div>
+<div class="comment-form-email form-group has-feedback"><div class="input-group">
+<div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
+<input class="form-control" placeholder="邮箱" id="email" name="email" type="text" value="" size="30"><span class="form-control-feedback required">*</span>
+</div></div>
+<p class="form-submit"><input name="submit" type="button" id="submit" class="btn btn-primary" disabled="true" value="发表评论"> <input type="hidden" name="comment_post_ID" value="59" id="comment_post_ID"> <input type="hidden" name="comment_parent" id="comment_parent" value="0"></p>
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="37c21b6ce9"></p>
+<input type="hidden" id="ak_js" name="ak_js" value="177"><textarea name="ak_hp_textarea" cols="45" rows="8" maxlength="100" style="display: none !important;"></textarea>
+</form>
+</div></section></article><section class="col-md-8 col-md-offset-2 clearfix"><div class="read">
+<div class="read-head"> <i class="fa fa-book"></i> 更多阅读</div>
+<div class="read-list row">
+<div class="col-md-6"><ul></ul></div>
+<div class="col-md-6"><ul>
+<li><a href="/shopify54.html" title="shopify收款方式之 &#8211; 如何申请stripe（19年更新成功率100%）">shopify收款方式之 &#8211; 如何申请stripe（19年更新成功率100%）</a></li>
+<li><a href="/shopify45.html" title="如何自动屏蔽Facebook帖子差评？">如何自动屏蔽Facebook帖子差评？</a></li>
+<li><a href="/shopify153.html" title="Shopify Facebook广告推广效果越来越差？细数Facebook广告七宗罪">Shopify Facebook广告推广效果越来越差？细数Facebook广告七宗罪</a></li>
+<li><a href="/shopify89.html" title="聊聊前段时间爆火的shopify60万店铺大数据分析">聊聊前段时间爆火的shopify60万店铺大数据分析</a></li>
+<li><a href="/shopify55.html" title="shopify收款方式之 &#8211; Paypal那些坑">shopify收款方式之 &#8211; Paypal那些坑</a></li>
+<li><a href="/shopify106.html" title="Dropshipping怎么做？95%卖家都不知道可以如此简单">Dropshipping怎么做？95%卖家都不知道可以如此简单</a></li>
+<li><a href="/shopify138.html" title="强烈推荐：Shopify新手教学课程 &#8211; 从零到一到起飞">强烈推荐：Shopify新手教学课程 &#8211; 从零到一到起飞</a></li>
+<li><a href="/shopify93.html" title="2019年Facebook最强spy工具 &#8211; adspy">2019年Facebook最强spy工具 &#8211; adspy</a></li>
+<li><a href="/shopify78.html" title="使用google analytics优化你的每一条facebook广告">使用google analytics优化你的每一条facebook广告</a></li>
+<li><a href="/shopify72.html" title="为什么不建议shopify卖家使用goo.gl &#038; bit.ly等短链接">为什么不建议shopify卖家使用goo.gl &#038; bit.ly等短链接</a></li>
+</ul></div>
+</div>
+</div>
+<div class="read">
+<div class="read-head"> <i class="fa fa-tags"></i> 标签云</div>
+<div class="read-list"> <a href="/shopifytag/dropshipping%e6%95%99%e7%a8%8b" class="tag-cloud-link tag-link-29 tag-link-position-1" style="font-size: 10.863636363636pt;" aria-label="dropshipping教程 (2个项目)">dropshipping教程</a> <a href="/shopifytag/facebook-spy%e5%b7%a5%e5%85%b7" class="tag-cloud-link tag-link-26 tag-link-position-2" style="font-size: 8pt;" aria-label="facebook spy工具 (1个项目)">facebook spy工具</a> <a href="/shopifytag/facebook%e5%86%8d%e8%90%a5%e9%94%80" class="tag-cloud-link tag-link-25 tag-link-position-3" style="font-size: 8pt;" aria-label="facebook再营销 (1个项目)">facebook再营销</a> <a href="/shopifytag/facebook%e5%b9%bf%e5%91%8a" class="tag-cloud-link tag-link-20 tag-link-position-4" style="font-size: 12.772727272727pt;" aria-label="facebook广告 (3个项目)">facebook广告</a> <a href="/shopifytag/facebook%e5%b9%bf%e5%91%8aspy" class="tag-cloud-link tag-link-27 tag-link-position-5" style="font-size: 8pt;" aria-label="facebook广告spy (1个项目)">facebook广告spy</a> <a href="/shopifytag/facebook%e5%b9%bf%e5%91%8a%e6%95%99%e7%a8%8b" class="tag-cloud-link tag-link-10 tag-link-position-6" style="font-size: 12.772727272727pt;" aria-label="facebook广告教程 (3个项目)">facebook广告教程</a> <a href="/shopifytag/facebook%e6%8e%a8%e5%b9%bf" class="tag-cloud-link tag-link-21 tag-link-position-7" style="font-size: 10.863636363636pt;" aria-label="facebook推广 (2个项目)">facebook推广</a> <a href="/shopifytag/facebook%e6%95%99%e7%a8%8b" class="tag-cloud-link tag-link-14 tag-link-position-8" style="font-size: 12.772727272727pt;" aria-label="facebook教程 (3个项目)">facebook教程</a> <a href="/shopifytag/facebook%e7%94%b5%e5%95%86%e5%b9%bf%e5%91%8a" class="tag-cloud-link tag-link-7 tag-link-position-9" style="font-size: 14.363636363636pt;" aria-label="facebook电商广告 (4个项目)">facebook电商广告</a> <a href="/shopifytag/facebook%e8%87%aa%e5%8a%a8%e5%88%a0%e5%b7%ae%e8%af%84" class="tag-cloud-link tag-link-15 tag-link-position-10" style="font-size: 8pt;" aria-label="facebook自动删差评 (1个项目)">facebook自动删差评</a> <a href="/shopifytag/shopify-app" class="tag-cloud-link tag-link-18 tag-link-position-11" style="font-size: 8pt;" aria-label="shopify app (1个项目)">shopify app</a> <a href="/shopifytag/shopify-dropshipping" class="tag-cloud-link tag-link-28 tag-link-position-12" style="font-size: 8pt;" aria-label="shopify dropshipping (1个项目)">shopify dropshipping</a> <a href="/shopifytag/shopify%e5%86%8d%e8%90%a5%e9%94%80" class="tag-cloud-link tag-link-24 tag-link-position-13" style="font-size: 8pt;" aria-label="shopify再营销 (1个项目)">shopify再营销</a> <a href="/shopifytag/shopify%e5%b9%bf%e5%91%8a" class="tag-cloud-link tag-link-8 tag-link-position-14" style="font-size: 14.363636363636pt;" aria-label="shopify广告 (4个项目)">shopify广告</a> <a href="/shopifytag/shopify%e5%bc%80%e5%ba%97" class="tag-cloud-link tag-link-5 tag-link-position-15" style="font-size: 15.636363636364pt;" aria-label="shopify开店 (5个项目)">shopify开店</a> <a href="/shopifytag/shopify%e5%bc%95%e6%b5%81" class="tag-cloud-link tag-link-9 tag-link-position-16" style="font-size: 10.863636363636pt;" aria-label="shopify引流 (2个项目)">shopify引流</a> <a href="/shopifytag/shopify%e6%8a%80%e5%b7%a7" class="tag-cloud-link tag-link-13 tag-link-position-17" style="font-size: 12.772727272727pt;" aria-label="shopify技巧 (3个项目)">shopify技巧</a> <a href="/shopifytag/shopify%e6%8e%a8%e5%b9%bf" class="tag-cloud-link tag-link-6 tag-link-position-18" style="font-size: 19.772727272727pt;" aria-label="shopify推广 (10个项目)">shopify推广</a> <a href="/shopifytag/shopify%e6%8f%92%e4%bb%b6" class="tag-cloud-link tag-link-19 tag-link-position-19" style="font-size: 8pt;" aria-label="shopify插件 (1个项目)">shopify插件</a> <a href="/shopifytag/shopify%e6%94%af%e4%bb%98" class="tag-cloud-link tag-link-17 tag-link-position-20" style="font-size: 12.772727272727pt;" aria-label="shopify支付 (3个项目)">shopify支付</a> <a href="/shopifytag/shopify%e6%94%b6%e6%ac%be" class="tag-cloud-link tag-link-16 tag-link-position-21" style="font-size: 12.772727272727pt;" aria-label="shopify收款 (3个项目)">shopify收款</a> <a href="/shopifytag/shopify%e6%95%99%e7%a8%8b" class="tag-cloud-link tag-link-4 tag-link-position-22" style="font-size: 22pt;" aria-label="shopify教程 (14个项目)">shopify教程</a> <a href="/shopifytag/shopify%e7%8b%ac%e7%ab%8b%e7%ab%99" class="tag-cloud-link tag-link-3 tag-link-position-23" style="font-size: 8pt;" aria-label="shopify独立站 (1个项目)">shopify独立站</a> <a href="/shopifytag/shopify%e7%ab%9e%e4%ba%89%e5%af%b9%e6%89%8b" class="tag-cloud-link tag-link-23 tag-link-position-24" style="font-size: 8pt;" aria-label="shopify竞争对手 (1个项目)">shopify竞争对手</a> <a href="/shopifytag/shopify%e7%ab%9e%e5%93%81%e5%88%86%e6%9e%90" class="tag-cloud-link tag-link-22 tag-link-position-25" style="font-size: 8pt;" aria-label="shopify竞品分析 (1个项目)">shopify竞品分析</a>
+</div>
+</div></section>
+</div>
+
+https://www <script>$(function() {
+    $('[data-toggle="tooltip"]').tooltip()
+});</script> <script>(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();</script> <script src="/wp-content/cache/min/1/39de095809de13d7f09736c8d3cf4a1a.js" data-minify="1" defer></script>
+</body>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me -->
+</html>
